@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+    width: 100%;
+    padding-top: 10px;
+    background: black;
+}
+
+/* Nav bar start here */
+
+.nav-section {
+    width: 100%;
+    background: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-heading {
+    color: #ff4400;
+    font-size: 26px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.i-con i {
+    font-size: 26px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.drop-menu {
+    background: black;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    top: 250px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    visibility: hidden;
+    z-index: 8;
+}
+
+.drop-menu a {
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    padding: 10px;
+    line-height: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Nav bar end here */
+
+/* Home part start here */
+
+.home-section {
+    width: 100%;
+    padding: 15px;
+    background-image: url('img/cover-pic-1.jpg');
+    background-size: 100% 350px;
+    background-repeat: no-repeat;
+    animation: slider 13s linear infinite;
+    animation-delay: 2s;
+}
+
+.home-search {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+
+.home-search input {
+    width: 100%;
+    border: none;
+    height: 45px;
+    border-radius: 7px;
+    padding-left: 15px;
+    z-index: 3;
+}
+
+.home-search input::placeholder {
+    color: black;
+}
+
+.home-search button {
+    width: 80px;
+    padding: 10px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: #ff4400;
+    color: white;
+    position: absolute;
+    right: 0px;
+    z-index: 3;
+}
+
+.home-dis {
+    padding: 15px;
+    line-height: 26px;
+}
+
+.home-dis h3 {
+    color: #ff4400;
+    font-size: 26px;
+}
+
+.home-dis p {
+    color: white;
+    animation: tex 13s linear infinite;
+    animation-delay: 2s;
+}
+
+.home-dis button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff4400;
+    color: white;
+    margin: 10px 0px;
+}
+
+.choise {
+    text-align: center;
+    padding: 15px;
+}
+
+.choise button {
+    width: 80px;
+    margin: 0px 15px;
+    padding: 7px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ff4400;
+    border: 1.5px solid #ff4400;
+    border-radius: 2px;
+}
+
+/* Home part end here */
+
+/* Food part start here */
+
+.food-section {
+    background: black;
+    color: white;
+    padding: 15px;
+}
+
+.food-heading {
+    font-size: 20px;
+    margin: 10px 0px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+
+.v-over {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.vege {
+    color: black;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    width: 600px;
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: fit-content;
+    margin-left: 15px;
+    transition: transform 0.3s
+}
+
+.card img {
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card h4 {
+    font-size: 28px;
+    padding: 7px 10px;
+}
+
+.card h5 {
+    font-size: 20px;
+    padding: 7px 10px;
+}
+
+.ster {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.ster i {
+    padding-bottom: 10px;
+    color: #ff4400;
+}
+
+.card button {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.regular-section {
+    width: 100%;
+    color: black;
+}
+
+.regular-section .food-heading {
+    color: white;
+}
+
+.card-container {
+    width: 300px;
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.r-card {
+    height: 500px;
+    background: #fff;
+    margin-bottom: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: transform 1s;
+}
+
+.r-card img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.r-card h4 {
+    font-size: 28px;
+    font-size: 28px;
+    padding: 7px 10px;
+}
+
+.r-card p {
+    width: 80%;
+    text-align: justify;
+    padding: 7px 10px;
+}
+
+.r-card h5 {
+    font-size: 22px;
+    padding: 7px 10px;
+}
+
+.r-card button {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.fast-food-section {
+    background: #000;
+    width: 100%;
+    padding: 15px;
+}
+
+.fast-food-section h4 {
+    color: white;
+}
+
+.food-container {
+    height: fit-content;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 7px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fast-card {
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+
+.fast-card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 300px;
+}
+
+.fast-card h4 {
+    font-size: 28px;
+    padding: 7px;
+    color: black;
+}
+
+.fast-card p {
+    text-align: justify;
+    width: 80%;
+    padding: 7px 10px;
+    line-height: 22px;
+}
+
+.fast-card h5 {
+    font-size: 22px;
+    padding: 7px 10px;
+}
+
+.fast-card button {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Food part end here */
+
+/*footer part start here*/
+.footer-section {
+    width: 100%;
+    background: #24262b;
+    padding: 15px 10px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.company h4 {
+    font-size: 18px;
+    margin: 10px 0px;
+    border-bottom: 1.5px solid #FF3777;
+    width: fit-content;
+    padding: 2px 0px;
+}
+
+.company a {
+    color: #fff;
+    width: fit-content;
+    line-height: 26px;
+    padding: 0px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social h4 {
+    font-size: 18px;
+    margin: 10px 0px;
+    border-bottom: 1.5px solid #FF3777;
+    width: fit-content;
+    padding: 2px 0px;
+}
+
+.social-link i {
+    font-size: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+.social-link a {
+    margin: 10px 15px;
+    transition: all 1s ease;
+}
+/*footer part end here*/
+
+/* hover part start here */
+.i-con:hover .drop-menu {
+    visibility: visible;
+}
+
+.drop-menu a:hover {
+    color: #ff4400;
+    transition: all 0.3s;
+    padding-left: 15px;
+}
+
+@keyframes slider {
+    33.3% {
+        background-image: url('img/cover-pic-2.jpg');
+    }
+
+    66.6% {
+        background-image: url('img/cover-pic-3.jpg');
+    }
+
+    100% {
+        background-image: url('img/cover-pic-1.jpg');
+    }
+}
+.home-search input:hover {
+    border-bottom: 2px solid lightgreen;
+    transition: all 1s;
+}
+
+@keyframes tex {
+    33.3% {
+        color: black;
+    }
+
+    66.7% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+.choise button:hover {
+    background: white;
+    color: black;
+    transition: all 1s;
+    border: none;
+}
+
+.card:hover, .fast-card:hover {
+    transform: scale(0.9);
+}
+
+.card button:hover {
+    background: #ff4044;
+    color: white;
+    transition: all 1s;
+}
+
+.r-card button:hover,
+.fast-card button:hover {
+    background: #ff4044;
+    color: white;
+    transition: all 1s;
+}
+
+.r-card:hover {
+    transform: scale(0.9);
+}
+.company a:hover {
+    padding-left: 25px;
+}
+
+.fac:hover {
+    color: #4267B2;
+}
+
+.ins:hover {
+    color: #3f729b;
+}
+
+.twi:hover {
+    color: #00acee;
+}
+
+.lik:hover {
+    color: #0072b1;
+}
+
+/* hover part end here */
