@@ -84,7 +84,7 @@ body {
 .home-section {
     width: 100%;
     padding: 15px;
-    background-image: url('img/cover-pic-1.jpg');
+    background-image: url('cover-pic-1.jpg');
     background-size: 100% 350px;
     background-repeat: no-repeat;
     animation: slider 13s linear infinite;
