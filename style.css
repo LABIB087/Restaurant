@@ -45,7 +45,9 @@ body {
     padding-left: 10px;
 }
 
-.i-con i {
+.bar {
+    position: absolute;
+    right: 15px;
     font-size: 26px;
     margin-top: 20px;
     padding-right: 10px;
