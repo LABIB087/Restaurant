@@ -60,10 +60,7 @@ body {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
     padding: 10px 20px;
-    visibility: hidden;
     z-index: 8;
 }
 
@@ -75,8 +72,11 @@ body {
     line-height: 22px;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
 }
-
+.hidden{
+    display: none;
+}
 /* Nav bar end here */
 
 /* Home part start here */
@@ -440,9 +440,6 @@ body {
 /*footer part end here*/
 
 /* hover part start here */
-.i-con:hover .drop-menu {
-    visibility: visible;
-}
 
 .drop-menu a:hover {
     color: #ff4400;
